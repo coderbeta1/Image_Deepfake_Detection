@@ -1,0 +1,4 @@
+,laion_vs_ldm100,bigganReal_vs_bigganFake,imagenet_vs_ldm200
+laion_vs_ldm100,0.92,0.54325,0.7305
+bigganReal_vs_bigganFake,0.5865,0.855,0.627
+imagenet_vs_ldm200,0.699,0.57775,0.9575
