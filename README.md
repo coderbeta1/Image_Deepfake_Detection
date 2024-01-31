@@ -82,7 +82,7 @@ For this pupose I tried, <br>
 
 ### Section 3: Going Beyond ...
 
-#### After this I tried to split the load feature transforms over multiple backbones instead of just one backbone, I made the following combinations:
+#### After this I tried to split the load for feature transforms over multiple backbones instead of just one backbone, I made the following combinations:
 1. DINO ViT-B/16 and DINO ResNET50 and CLIP ViT-B/16
 2. DINO ViT-B/16 and DINO ResNET50
 3. CLIP ViT-B/16 and DINO ResNET50
