@@ -57,13 +57,14 @@ For this pupose I tried, <br>
 
 ### Section 2: Findings and Inference:
 
-#### 1. Impact of using transforms before training:
+#### 1. Impact of using transforms before training and after training:
 ![Impact_of_transformations_on_training](https://github.com/coderbeta1/Image_Deepfake_Detection/assets/72234861/fee63dbd-857d-4682-ac91-01b0ead60ed3)
 
 **NOTE:** Goodness Factor was calculated by subtracting min(accuracy) from all data points for each line. Each line represents a different dataset-backbone model combination. The names have been omitted for clarity
 
-**Inference:** Adding No transform while training is better. But adding transform 2 also shows good results. Dealing with Gaussian Blur might cause issues in accuracy (around 0.05 
- on average)
+**Inference 1:** Adding No transform while training is better. But adding transform 2 also shows good results. Dealing with Gaussian Blur might cause issues in accuracy (around 0.05 on average)
+
+**Inference 2:** On adding no transform while training but adding transformation while testing it was found that the models were robust to those transforms. This means that if the user were to do some edits like adding jitter or gaussian blur (while compressing it) to the images the models would still be very accurate
 
 #### 2. Impact of Dimensionality Reduction:
 ![Impact_of_dimensionality_reduction_vs_classifiers](https://github.com/coderbeta1/Image_Deepfake_Detection/assets/72234861/5a5f5631-2c59-4816-b028-58ec1fb8a726)
